@@ -10,16 +10,19 @@
 					<span class="login100-form-title p-b-55">
 						Sign up
 					</span>
+                    <span class="errors" id="formError"></span>
+                    <span id="formSuccess"></span>
                     <div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">
-                        <span class="error"></span>
+                        <span class="errors"></span>
 						<input class="input100" type="text" name="fname" placeholder="First Name">
 						<span class="focus-input100"></span>
 {#						<span class="symbol-input100">#}
 {#							<span class="lnr lnr-envelope"></span>#}
 {#						</span>#}
 					</div>
-                    <span class="error"></span>
+
                     <div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">
+                        <span class="errors"></span>
 						<input class="input100" type="text" name="lname" placeholder="Last Name">
 						<span class="focus-input100"></span>
 {#						<span class="symbol-input100">#}
@@ -28,7 +31,8 @@
 					</div>
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+                        <span class="errors hide">Please enter valid email..!</span>
+                        <input class="input100" type="text" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<span class="lnr lnr-envelope"></span>
@@ -36,6 +40,7 @@
 					</div>
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">
+                         <span class="errors"></span>
 						<input class="input100" type="number" name="phoneno" placeholder="Phone No">
 						<span class="focus-input100"></span>
 {#						<span class="symbol-input100">#}
@@ -44,6 +49,7 @@
 					</div>
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
+                         <span class="errors"></span>
 						<input class="input100" type="password" name="password" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
@@ -52,12 +58,13 @@
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
-                        <span class="errors"></span>
+
 						<input class="input100" type="password" name="cpassword" placeholder="Confirm Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<span class="lnr lnr-lock"></span>
 						</span>
+                        <span class="errors1"></span>
 					</div>
 
 {#					<div class="contact100-form-checkbox m-l-4">#}

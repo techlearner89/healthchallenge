@@ -558,3 +558,12 @@ iframe {
     padding-right: 15px;
   }
 }
+.errors {
+  color: red;
+}
+#formSuccess {
+  color: green;
+}
+.hide {
+  display: none;
+}
